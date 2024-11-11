@@ -1,1 +1,9 @@
 Constantin Turcan 20261608
+Rapport Devoir 1
+
+Question 2
+Dans ce travail, nous avons exploré un système de chiffrement de substitution utilisant des symboles uniques (caractères) et des bi-caractères. Ce système se base sur une clé de substitution générée aléatoirement, où chaque symbole (caractère ou paire de caractères) est mappé à une séquence de bits de 8 bits. L'objectif principal de ce travail est de développer un programme capable de déchiffrer un message chiffré à l'aide de cette clé.
+Le corpus utilisé pour générer les symboles provient des deux sites fournis. Ces textes sont récupérés sous format UTF-8 et concaténés pour former un texte brut à partir duquel les symboles sont extraits.
+Les symboles sont extraits en identifiant les caractères uniques et les paires de caractères les plus fréquentes. L'ensemble des symboles utilisés dans le chiffrement est constitué de caractères individuels et de paires de caractères.
+La clé de substitution est générée en attribuant à chaque symbole une valeur binaire unique de 8 bits. Cette clé est utilisée pour encoder et décoder les messages.  Le chiffrement consiste à transformer le message en une séquence de symboles (caractères ou paires de caractères), puis à substituer chaque symbole par sa correspondance binaire selon la clé de substitution.
+Le déchiffrement repose sur l'inversion de la clé de substitution. La fonction « invert_key » inverse la clé pour associer chaque séquence de bits à son symbole original. Ensuite, le texte chiffré est reconverti en texte clair en utilisant cette clé inversée.
